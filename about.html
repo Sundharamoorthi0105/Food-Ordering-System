@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Spice Garden Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html" class="header-link">🌶️ Spice Garden Restaurant</a></h1>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About Us</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+                <a href="login.html" class="nav-link login-link">Login</a>
+                <div class="cart-icon" id="cartIcon">
+                    <span>🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="page-content">
+            <h1>About Spice Garden Restaurant</h1>
+            <div class="about-content">
+                <div class="about-section">
+                    <h2>Our Story</h2>
+                    <p>Spice Garden Restaurant was founded with a simple mission: to bring delicious, authentic flavors to your table. Since our inception, we have been committed to using the freshest ingredients and traditional cooking methods to create memorable dining experiences.</p>
+                </div>
+                <div class="about-section">
+                    <h2>Our Mission</h2>
+                    <p>We strive to provide exceptional food quality and outstanding customer service. Every dish is prepared with care, passion, and attention to detail, ensuring that every bite is a celebration of flavor.</p>
+                </div>
+                <div class="about-section">
+                    <h2>Why Choose Us?</h2>
+                    <ul class="features-list">
+                        <li>✨ Fresh ingredients sourced daily</li>
+                        <li>👨‍🍳 Experienced chefs with years of expertise</li>
+                        <li>🚚 Fast and reliable delivery service</li>
+                        <li>💰 Affordable prices for everyone</li>
+                        <li>⭐ Highly rated by thousands of customers</li>
+                        <li>🌱 Options for all dietary preferences</li>
+                    </ul>
+                </div>
+                <div class="about-section">
+                    <h2>Our Values</h2>
+                    <p>At Spice Garden, we believe in quality, integrity, and customer satisfaction. We are dedicated to maintaining the highest standards in food preparation, hygiene, and service delivery.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌶️ Spice Garden Restaurant</h3>
+                    <p>Delicious food delivered to your doorstep. Order now and enjoy the best flavors!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📧 Email: info@spicegarden.com</p>
+                    <p>📞 Phone: +91 1234567890</p>
+                    <p>📍 Address: 123 Food Street, City, State</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Spice Garden Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script>
+        updateCartCount();
+        document.getElementById('cartIcon').addEventListener('click', () => {
+            window.location.href = 'cart.html';
+        });
+    </script>
+</body>
+</html>
+
